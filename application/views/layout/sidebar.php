@@ -22,6 +22,10 @@
                             <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Absensi Pegawai
                         </a>
+                        </a><a class="nav-link" href="<?= base_url('absensimanual'); ?>">
+                            <div class="sb-nav-link-icon"><span class="fas fa-user-clock"></span></div>
+                            Absensi Manual
+                        </a>
                         </a><a class="nav-link" href="<?= base_url('settingapp'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-cog"></span></div>
                             Settings Aplikasi

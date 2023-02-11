@@ -78,4 +78,19 @@ class Admin extends CI_Controller
         $this->load->view('admin/absenpegawai', $data);
         $this->load->view('layout/footer', $data);
     }
+
+    public function absensimanual()
+    {
+        is_admin();
+        $data = [
+            'title' => 'Kelola Ijin/Sakit Pegawai',
+            'user' => $this->get_datasess,
+            'dataapp' => $this->get_datasetupapp
+        ];
+        $this->load->view('layout/header', $data);
+        $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/sidebar', $data);
+        $this->load->view('admin/kelolaijin', $data);
+        $this->load->view('layout/footer', $data);
+    }
 }
